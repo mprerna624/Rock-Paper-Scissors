@@ -1,0 +1,136 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-title {
+    background-color: #111720;
+    padding-block: 2em;
+}
+
+.game-title h1{
+    font-family: "Quantico", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fac650;
+    font-weight: 900;
+    font-size: 2.75rem;
+    word-spacing: 1rem;
+    letter-spacing: 0.25ch;
+}
+
+.main {
+    background-color: #222831;
+    color: #ddd;
+    padding-block: 5.25vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-title {
+    text-transform: uppercase;
+    font-family: "Quantico", sans-serif;
+    font-size: 2.45rem;
+}
+
+#score-msg {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.15ch;
+    /* padding-block: 0.5rem; */
+}
+
+.playground-area {
+    margin-block: 2rem;
+    text-align: center;
+
+    display: flex;
+    gap: 4.5rem;
+}
+
+.icon {
+    font-size: 5rem;
+}
+
+.score {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.125ch;
+    margin-top: 2rem;
+}
+
+.buttons-div {
+    margin-top: 1.25rem;
+
+    display: flex;
+    flex-grow: 1;
+    gap: 1.75rem;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: #393e46;
+    border-radius: 0.6rem;
+    text-align: center;
+    font-size: 5rem;
+    width: 10rem;
+    height: 10rem;
+    /* padding: 0.25em ; */
+}
+
+button:hover, button:focus {
+    background-color: #4a4f57;
+}
+
+button:active {
+    background-color: #5b5f68;
+}
+
+dialog {
+    /* DO NOT APPLY Display Property on Dialog Element as it will override the default hiding property of dialog box 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 0.75rem;  */
+
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #5b5f68;
+    color: #ddd;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+    & button {
+        font-size: 1.5rem;
+        height: 3rem;
+        color: #ddd;
+    }
+}
+
+dialog > button {
+
+    /* For centering out a button in dialog box */
+
+    position: relative;
+    left:50%;
+    top:30px;
+    transform: translate(-50%,-50%);
+ 
+}
+
+dialog::backdrop {
+    background-color: #fac650;
+    opacity: 0.75;
+}

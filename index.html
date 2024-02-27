@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Quantico:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <dialog id="dialogBox">
+        <h1 id="dialogTitle"></h1>
+        <button id="playAgain">Play Again!</button>
+    </dialog>
+    
+    <div class="game-wrapper">
+        <header class="game-title"><h1>Rock Paper Scissors</h1></header>
+
+        <main class="main">
+            <h2 class="main-title">Choose your Weapon</h2>
+            <h3 id="score-msg">First to score 5 points wins the game</h3>
+
+            <div class="playground-area">
+                <div class="player-box">
+                    <span class="icon" id="p-icon">❔</span>
+                    <p class="score p-score">Player : <span id="p-score-val">0</span></p>
+                </div>
+                <div class="comp-box">
+                    <span class="icon" id="c-icon">❔</span>
+                    <p class="score c-score">Computer : <span id="c-score-val">0</span></p>
+                </div>
+            </div>
+
+            <div class="buttons-div">
+                <button class="rock">👊</button>
+                <button class="paper">✋</button>
+                <button class="scissors">✌</button>
+            </div>
+        </main>
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
